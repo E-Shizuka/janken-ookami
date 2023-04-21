@@ -1,0 +1,681 @@
+/*全体共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Garamond, "こころ明朝体", serif;
+	line-height: 1.75;
+	font-size: 16px;
+	user-select: none;
+}
+
+button {
+	font-family: Garamond,
+		"こころ明朝体",
+		serif;
+}
+
+
+/*パディングをサイズ内側にする処理*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+.top {
+	background: url(../img/torii.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 1000px;
+	object-fit: cover;
+	position: relative;
+	animation-name: fadeAnime;
+	animation-duration: 5s;
+	opacity: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeAnime {
+	50% {
+		opacity: 1;
+		height: 1000px;
+		background: url(../img/torii.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	70% {
+		opacity: 0;
+		height: 1000px;
+		background: url(../img/torii.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	85% {
+		height: 10px;
+		background: black;
+	}
+
+	100% {
+		height: 10px;
+		background: black;
+	}
+}
+
+.jastify {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 470px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.top-title {
+	color: white;
+	font-size: 64px;
+	animation-name: fadetextAnime;
+	animation-duration: 5s;
+	opacity: 1;
+	animation-fill-mode: forwards;
+}
+
+.top-text1 {
+	color: white;
+	font-size: 32px;
+	animation-name: fadetextAnime;
+	animation-duration: 5s;
+	opacity: 1;
+	animation-fill-mode: forwards;
+}
+
+.top-text2 {
+	color: white;
+	text-align: end;
+	font-size: 24px;
+	padding-right: 64px;
+	padding-top: 160px;
+	animation-name: fadetextAnime;
+	animation-duration: 5s;
+	opacity: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadetextAnime {
+	50% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.arasuji {
+	background: url(../img/arasuji-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	object-fit: cover;
+	position: relative;
+	margin-left: 240px;
+	margin-right: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.arasuji-p {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.558);
+	height: 480px;
+	width: 95%;
+}
+
+.arasuji-title {
+	color: black;
+	text-shadow: 2px 2px 10px white;
+	font-size: 64px;
+	text-align: center;
+}
+
+.arasuji-text {
+	color: black;
+	text-shadow: 1px 1px 7px white;
+	font-size: 32px;
+	text-align: center;
+}
+
+.arasuji-2 {
+	background: url(../img/special_img03.png);
+	background-size: cover;
+	background-position: center;
+	height: 320px;
+	object-fit: cover;
+	position: relative;
+	margin-left: 240px;
+	margin-right: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-start {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 64px;
+
+}
+
+.start-btn {
+	height: 64px;
+	width: auto;
+	padding: 8px;
+	margin: 8px;
+	background-color: rgb(212, 48, 65);
+	border-radius: 3px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.start-btn li:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+.yohaku {
+
+	width: 100vh;
+	background-color: white;
+}
+
+.play:visited {
+	color: rgb(212, 48, 65);
+}
+
+.guriko {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 64px;
+	background-color: white;
+}
+
+.pc-kaidan {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+#cpu {
+	height: 96px;
+	width: auto;
+}
+
+#player {
+	height: 96px;
+	width: auto;
+}
+
+.player-kaidan {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.player-name {
+	text-align: center;
+}
+
+.kaidan0 {
+	height: 104px;
+	width: 50%;
+	text-align: center;
+}
+
+.game {
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	top: 24px;
+	margin: 0 auto;
+	opacity: 1;
+}
+
+.game ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game li {
+	padding: 8px;
+	margin: 8px;
+	background-color: rgb(212, 48, 65);
+	color: white;
+	border-radius: 3px;
+	font-size: 1.5em;
+	width: auto;
+}
+
+.game li:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+.cpu {
+	background: url(../img/amaterasu.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgb(255, 189, 195) !important;
+
+}
+
+.player {
+	background: url(../img/player.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgb(255, 189, 195) !important;
+}
+
+.kaidan {
+	border: solid 1px rgb(81, 80, 80);
+	background-color: rgb(202, 202, 202);
+	height: 32px;
+	width: 50%;
+	text-align: center;
+}
+
+.cpu-win {
+	display: none;
+	position: fixed;
+	background-color: white;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10000;
+}
+
+.a-w {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.a-w-left {
+	width: 50%;
+}
+
+.a-w-right {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.a-win-cm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.a-win-title {
+	text-align: center;
+	color: black;
+}
+
+.a-win-text {
+	text-align: center;
+	color: black;
+}
+
+.a-win-button {
+	padding-top: 64px;
+}
+
+.tryagain {
+	height: 64px;
+	width: auto;
+	padding: 8px;
+	margin: 8px;
+	background-color: rgb(212, 48, 65);
+	color: white;
+	border-radius: 3px;
+	font-size: 1.5em;
+}
+
+.tryagain li:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+.player-win {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: auto;
+	z-index: 10000;
+	background-color: rgb(212, 48, 65);
+	text-align: center;
+}
+
+.p-win-cm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+}
+
+.p-win-title {
+	text-align: center;
+	color: white;
+}
+
+.p-win-btn {
+	height: 64px;
+	width: auto;
+	padding: 8px;
+	margin: 8px;
+	background-color: rgb(51, 34, 8);
+	border-radius: 3px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.p-win-btn li:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+.next {
+	color: white;
+}
+
+.next:visited {
+	color: rgb(212, 48, 65);
+}
+
+.more {
+	display: none;
+}
+
+.injinja {
+	background: url(../img/in-jinja.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 1000px;
+	object-fit: cover;
+	position: relative;
+	margin-bottom: 240px;
+}
+
+.injinja-p {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.558);
+	height: 950px;
+	width: 95%;
+}
+
+.injinja-title {
+	color: black;
+	text-shadow: 2px 2px 10px white;
+	font-size: 64px;
+	text-align: center;
+}
+
+.injinja-text {
+	color: black;
+	text-shadow: 1px 1px 7px white;
+	font-size: 32px;
+	text-align: center;
+}
+
+.omairi-btn {
+	height: 64px;
+	width: auto;
+	padding: 8px;
+	margin-top: 275px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	background-color: rgb(212, 48, 65);
+	border-radius: 3px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.omairi-btn li:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+.omairi {
+	color: white;
+}
+
+.omairi:visited {
+	color: rgb(212, 48, 65);
+}
+
+.background {
+	background: url(../img/back2.jpg);
+	background-repeat: repeat-y;
+	background-size: contain;
+	width: 100vw;
+}
+
+.honden {
+	background: url(../img/honden.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: auto;
+	position: relative;
+	padding-top: 240px;
+	padding-bottom: 240px;
+}
+
+.suzunarashi {
+	margin: 40px;
+}
+
+.suzu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 16px;
+}
+
+.suzu-p {
+	text-align: center;
+	justify-content: center;
+	font-size: 24px;
+}
+
+.suzu-p2 {
+	text-align: center;
+	justify-content: center;
+	font-size: 16px;
+}
+
+.suzu li {
+	padding: 8px;
+	margin: 8px;
+	background-color: rgb(212, 48, 65);
+	color: white;
+	border-radius: 3px;
+	font-size: 1.5em;
+	width: auto;
+}
+
+.suzu li:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+.no-kamisama {
+	height: 270px;
+}
+
+.kamisama {
+	display: none;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 270px;
+	padding-bottom: 72px;
+}
+
+.kamisama-img {
+	text-align: center;
+	height: 160px;
+}
+
+.saisho {
+	text-align: center;
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	font-size: 24px;
+	color: black;
+	text-shadow: 1.5px 1.5px #bfbebe;
+	background-color: white;
+	border-radius: 3px;
+}
+
+.saisho:hover {
+	color: rgb(212, 48, 65);
+	text-shadow: 1.5px 1.5px #bfbebe;
+}
+
+.tokei {
+	display: flex;
+	justify-content: center;
+}
+
+.clock {
+	border-radius: 50%;
+	border: 3px;
+	width: 150px;
+	height: 150px;
+	background: url(../img/tokei.gif);
+	background-size: cover;
+	position: relative;
+	justify-content: center;
+}
+
+.linehour {
+	width: 2px;
+	height: 60px;
+	background: white;
+	position: absolute;
+	top: calc(50% - 60px);
+	left: calc(50% - 1px);
+	transform-origin: bottom;
+}
+
+.linemin {
+	width: 2px;
+	height: 75px;
+	background: white;
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 1px);
+	transform-origin: bottom;
+}
+
+.linesec {
+	width: 1px;
+	height: 75px;
+	background: white;
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 1px);
+	transform-origin: bottom;
+}
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>＊＊＊＊＊</title>
+    <meta name="description" content=“参拝”>
+    <meta property="og:title" content="参拝">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="参拝" />
+    <meta property="og:description" content="参拝" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+</head>
+
+
+<body>
+    <!-- ここから記述しよう -->
+    <div class="top">
+        <div class="jastify">
+            <div class="center">
+                <h2 class="top-title">神社へお参りへ</h2>
+                <p class="top-text1">鳥居をくぐると…
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="arasuji" id="startline">
+        <div class="arasuji-p">
+            <div>
+                <h2 class="arasuji-title">鳥居！</h2>
+            </div>
+            <div>
+                <p class="arasuji-text">
+                    あれ？また？…神木村へ迷いこんでしまったようです。<br><br>そこへ大神アマテラスが。<br>どうやらじゃんけん勝負に勝利したら正しい道を教えてくれるようです！
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="arasuji-2"></div>
+    <div class="game-start">
+        <button class="start-btn" onclick="location.href='#gamespace'">ゲームを始める</button>
+    </div>
+    <div class="game" id="gamespace">
+        <ul>
+            <li id="gu_btn">グー</li>
+            <li id="cho_btn">チョキ</li>
+            <li id="par_btn">パー</li>
+        </ul>
+        <div id="com_hand">アマテラスの出した手は？</div>
+        <div id="result">結果は？</div>
+    </div>
+    <div class="guriko">
+        <div class="pc-kaidan">
+            <h2 class="player-name">アマテラス</h2>
+            <div class="kaidan0 cpu" id="ka-0"></div>
+            <div class="kaidan" id="ka-1"></div>
+            <div class="kaidan" id="ka-2"></div>
+            <div class="kaidan" id="ka-3"></div>
+            <div class="kaidan" id="ka-4"></div>
+            <div class="kaidan" id="ka-5"></div>
+            <div class="kaidan" id="ka-6"></div>
+            <div class="kaidan" id="ka-7"></div>
+            <div class="kaidan" id="ka-8"></div>
+            <div class="kaidan" id="ka-9"></div>
+            <div class="kaidan" id="ka-10"></div>
+            <div class="kaidan" id="ka-11"></div>
+            <div class="kaidan" id="ka-12"></div>
+            <div class="kaidan" id="ka-13"></div>
+            <div class="kaidan" id="ka-14"></div>
+            <div class="kaidan" id="ka-15"></div>
+            <div class="kaidan" id="ka-16"></div>
+            <div class="kaidan" id="ka-17"></div>
+            <div class="kaidan" id="ka-18"></div>
+            <div class="kaidan" id="ka-19"></div>
+            <div class="kaidan" id="ka-20"></div>
+        </div>
+        <div class="player-kaidan">
+            <h2 class="player-name">あなた</h2>
+            <div class="kaidan0 player" id="ky-0"></div>
+            <div class="kaidan" id="ky-1"></div>
+            <div class="kaidan" id="ky-2"></div>
+            <div class="kaidan" id="ky-3"></div>
+            <div class="kaidan" id="ky-4"></div>
+            <div class="kaidan" id="ky-5"></div>
+            <div class="kaidan" id="ky-6"></div>
+            <div class="kaidan" id="ky-7"></div>
+            <div class="kaidan" id="ky-8"></div>
+            <div class="kaidan" id="ky-9"></div>
+            <div class="kaidan" id="ky-10"></div>
+            <div class="kaidan" id="ky-11"></div>
+            <div class="kaidan" id="ky-12"></div>
+            <div class="kaidan" id="ky-13"></div>
+            <div class="kaidan" id="ky-14"></div>
+            <div class="kaidan" id="ky-15"></div>
+            <div class="kaidan" id="ky-16"></div>
+            <div class="kaidan" id="ky-17"></div>
+            <div class="kaidan" id="ky-18"></div>
+            <div class="kaidan" id="ky-19"></div>
+            <div class="kaidan" id="ky-20"></div>
+        </div>
+    </div>
+
+    <div class="cpu-win">
+        <div class="a-w">
+            <div class="a-w-left">
+                <img src="img/amaterasu-toujo.gif">
+            </div>
+            <div class="a-w-right">
+                <div class="a-win-cm">
+                    <h2 class="a-win-title">アマテラスの勝利！</h2>
+                    <p class="a-win-title">あなたは鳥居の外に戻された</p>
+                </div>
+                <div class="a-win-button">
+                    <button class="tryagain">もう一度やり直す</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="player-win">
+        <h2 class="p-win-title">あなたの勝利！</h2>
+        <button class="p-win-btn" onclick="location.href='#jinjairiguchi'">先へ進む</button>
+        <img src="img/amaterasu-haiboku.jpg">
+    </div>
+    <div class="more" id="jinjairiguchi">
+        <div class="injinja">
+            <div class="injinja-p">
+                <div>
+                    <h2 class="injinja-title">ここは…！</h2>
+                </div>
+                <div>
+                    <p class="injinja-text">
+                        ようやく神社へたどり着きました。<br><br>この神社は参拝する際に鈴を鳴らすと神様の姿が見えることがあるとのこと。<br>そして、神様の姿が見えたら願い事が成就しやすいとの言い伝えが！
+                    </p>
+                </div>
+                <div>
+                    <button class="omairi-btn" onclick="location.href='#sanpai'">先へ進む</button>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <div class="honden" id="sanpai"></div>
+            <div class="suzunarashi">
+                <div>
+                    <h2 class="suzu-p">どの鈴を鳴らす？</h2>
+                    <p class="suzu-p2">挑戦は1回まで（鈴の占領はだめです。）</p>
+                </div>
+                <ul class="suzu">
+                    <li id="suzu-left">左の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
+                    <li id="suzu-center">真ん中の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
+                    <li id="suzu-right">右の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
+                </ul>
+                <div class="no-kamisama">
+                    <a href="#startline" class="saisho">最初からお参りする</a>
+                </div>
+                <div class="kamisama">
+                    <div>
+                        <p class="suzu-p">神様降臨！</p>
+                    </div>
+                    <div>
+                        <img src="img/kamisamatojo.gif" alt="神様！" class="kamisama-img">
+                    </div>
+                    <a href="#startline" class="saisho" id="reset">最初からお参りする</a>
+                </div>
+            </div>
+        </div>
+        <div class="tokei">
+            <div class="clock">
+                <div class="linehour"></div>
+                <div class="linemin"></div>
+                <div class="linesec"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // ここから記載
+
+        let cpu_position = 0;
+        let player_position = 0;
+
+
+
+        // $('#link_gamespace').on('click', function () {
+        //     $(window).scrollTop($('#gamespace').position().top);
+        // });
+
+
+        $("#gu_btn").on("click", function () {
+            const randomNumber = Math.floor(Math.random() * (4)) + 1;
+            if (randomNumber === 1) {
+                $('#com_hand').html("グー");
+                $('#result').html("あいこ").css('color', 'black');
+            } else if (randomNumber === 2) {
+                $('#com_hand').html("チョキ");
+                $('#result').html('勝ち　3段進む').css('color', 'red');
+                $(`#ky-${player_position}`).removeClass('player');
+                $(`#ky-${player_position}`)
+                player_position = player_position + 3
+                if (player_position >= 20) {
+                    player_position = 20
+                }
+                $(`#ky-${player_position}`).addClass('player');
+                // $(`#ky-${player_position - 3}`).css('background-color', 'rgb(255, 189, 195)');
+
+            } else {
+                $('#com_hand').html("パー");
+                $('#result').html('負け　アマテラスが6段進む').css('color', 'blue');
+                $(`#ka-${cpu_position}`).removeClass('cpu')
+                cpu_position = cpu_position + 6
+                if (cpu_position >= 20) {
+                    cpu_position = 20
+                }
+                $(`#ka-${cpu_position}`).addClass('cpu');
+            };
+            if (cpu_position === 20) {
+                $('.cpu-win').css({ display: 'block' });
+                $('.tryagain').on('click', function () {
+                    $(`#ka-${cpu_position}`).removeClass('cpu');
+                    cpu_position = 0
+                    $(`#ka-${cpu_position}`).addClass('cpu');
+                    $(`#ky-${player_position}`).removeClass('player');
+                    player_position = 0
+                    $(`#ky-${player_position}`).addClass('player');
+                    $('.cpu-win').css({ display: 'none' });
+                    $('#com_hand').html("アマテラスの出した手は？");
+                    $('#result').html("結果は？");
+                });
+            } else if (player_position === 20) {
+                $('.player-win').css({ display: 'block' });
+                $('.more').css({ display: 'block' });
+                $('.game').css({ display: 'none' });
+                setTimeout(function () {
+                    $('.player-win').css({ display: 'none' });
+                }, 3000);
+            };
+        });
+
+        $("#cho_btn").on("click", function () {
+            const randomNumber = Math.floor(Math.random() * (4)) + 1;
+            if (randomNumber === 1) {
+                $('#com_hand').html("グー");
+                $('#result').html('負け　アマテラスが3段進む').css('color', 'blue');
+                $(`#ka-${cpu_position}`).removeClass('cpu')
+                cpu_position = cpu_position + 3
+                if (cpu_position >= 20) {
+                    cpu_position = 20
+                }
+                $(`#ka-${cpu_position}`).addClass('cpu');
+            } else if (randomNumber === 2) {
+                $('#com_hand').html("チョキ");
+                $('#result').html("あいこ").css('color', 'black');
+            } else {
+                $('#com_hand').html("パー");
+                $('#result').html('勝ち　6段進む').css('color', 'red');
+                $(`#ky-${player_position}`).removeClass('player')
+                player_position = player_position + 6
+                if (player_position >= 20) {
+                    player_position = 20
+                }
+                $(`#ky-${player_position}`).addClass('player');
+            };
+            if (cpu_position === 20) {
+                $('.cpu-win').css({ display: 'block' });
+                $('.tryagain').on('click', function () {
+                    $(`#ka-${cpu_position}`).removeClass('cpu');
+                    cpu_position = 0
+                    $(`#ka-${cpu_position}`).addClass('cpu');
+                    $(`#ky-${player_position}`).removeClass('player');
+                    player_position = 0
+                    $(`#ky-${player_position}`).addClass('player');
+                    $('.cpu-win').css({ display: 'none' });
+                    $('#com_hand').html("アマテラスの出した手は？");
+                    $('#result').html("結果は？");
+                });
+            } else if (player_position === 20) {
+                $('.player-win').css({ display: 'block' });
+                $('.more').css({ display: 'block' });
+                $('.game').css({ display: 'none' });
+                setTimeout(function () {
+                    $('.player-win').css({ display: 'none' });
+                }, 3000);
+            };
+        });
+        $("#par_btn").on("click", function () {
+            const randomNumber = Math.floor(Math.random() * (4)) + 1;
+            if (randomNumber === 1) {
+                $('#com_hand').html("グー");
+                $('#result').html('勝ち　6段進む').css('color', 'red');
+                $(`#ky-${player_position}`).removeClass('player')
+                player_position = player_position + 6
+                if (player_position >= 20) {
+                    player_position = 20
+                }
+                $(`#ky-${player_position}`).addClass('player');
+            } else if (randomNumber === 2) {
+                $('#com_hand').html("チョキ");
+                $('#result').html('負け　アマテラスが6段進む').css('color', 'blue');
+                $(`#ka-${cpu_position}`).removeClass('cpu')
+                cpu_position = cpu_position + 6
+                if (cpu_position >= 20) {
+                    cpu_position = 20
+                }
+                $(`#ka-${cpu_position}`).addClass('cpu');
+            } else {
+                $('#com_hand').html("パー");
+                $('#result').html("あいこ").css('color', 'black');
+            };
+            if (cpu_position === 20) {
+                $('.cpu-win').css({ display: 'block' });
+                $('.tryagain').on('click', function () {
+                    $(`#ka-${cpu_position}`).removeClass('cpu');
+                    cpu_position = 0
+                    $(`#ka-${cpu_position}`).addClass('cpu');
+                    $(`#ky-${player_position}`).removeClass('player');
+                    player_position = 0
+                    $(`#ky-${player_position}`).addClass('player');
+                    $('.cpu-win').css({ display: 'none' });
+                    $('#com_hand').html("アマテラスの出した手は？");
+                    $('#result').html("結果は？");
+                });
+            } else if (player_position === 20) {
+                $('.player-win').css({ display: 'block' });
+                $('.more').css({ display: 'block' });
+                $('.game').css({ display: 'none' });
+                setTimeout(function () {
+                    $('.player-win').css({ display: 'none' });
+                }, 3000);
+            };
+        });
+
+        // suzunarasi
+
+        $("#suzu-left").on("click", function () {
+            const randomNumber = Math.floor(Math.random() * (4)) + 4;
+            $("#garagara")[0].volume = 0.2;
+            $("#garagara")[0].play();
+            if (randomNumber === 4) {
+                $('.no-kamisama').css({ display: 'none' });
+                $('.kamisama').css({ display: 'flex' });
+            }
+        });
+
+        $("#suzu-right").on("click", function () {
+            const randomNumber = Math.floor(Math.random() * (4)) + 4;
+            $("#garagara")[0].volume = 0.2;
+            $("#garagara")[0].play();
+            if (randomNumber === 5) {
+                $('.no-kamisama').css({ display: 'none' });
+                $('.kamisama').css({ display: 'flex' });
+            }
+        });
+
+        $("#suzu-center").on("click", function () {
+            const randomNumber = Math.floor(Math.random() * (4)) + 4;
+            $("#garagara")[0].volume = 0.2;
+            $("#garagara")[0].play();
+            if (randomNumber === 7) {
+                $('.no-kamisama').css({ display: 'none' });
+                $('.kamisama').css({ display: 'flex' });
+            }
+        });
+
+        // reset
+
+        $(".saisho").on("click", function () {
+            $('.game').css({ display: 'flex' });
+            $(`#ka-${cpu_position}`).removeClass('cpu');
+            cpu_position = 0
+            $(`#ka-${cpu_position}`).addClass('cpu');
+            $(`#ky-${player_position}`).removeClass('player');
+            player_position = 0
+            $(`#ky-${player_position}`).addClass('player');
+            $('.more').css({ display: 'none' });
+        });
+
+
+
+
+
+
+
+        setInterval(() => {
+            // 現在時間を取得
+            const now = new Date();
+
+            const h = now.getHours(); // 時間（0〜23）
+            const m = now.getMinutes(); // 分（0〜59）
+            const s = now.getSeconds(); // 秒（0〜59）
+
+            // 針の角度に反映する
+
+            // 短針
+            const degH = h * (360 / 12) + m * (360 / 12 / 60);
+
+            // 分針
+            const degM = m * (360 / 60);
+
+            // 秒針
+            const degS = s * (360 / 60);
+
+            const elementH = document.querySelector('.linehour');
+
+            const elementM = document.querySelector('.linemin');
+
+            const elementS = document.querySelector('.linesec');
+
+            elementH.style.transform = `rotate(${degH}deg)`;
+
+            elementM.style.transform = `rotate(${degM}deg)`;
+
+            elementS.style.transform = `rotate(${degS}deg)`;
+
+        }, 50);
+
+        // const result = $('.player1-xy').position();
+        // const player1 = $('<img>', {
+        //     id: 'player1',
+        //     src: 'img/amaterasu.jpg',
+        //     height: '96px'
+        // });
+        // player1.css({
+        //     left: result.left + 'px',
+        //     top: result.top + 'px'
+        // });
+        // $('.pc-kaidan').append(player1);
+
+    </script>
+</body>
+
+</html>
