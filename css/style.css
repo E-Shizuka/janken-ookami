@@ -7,6 +7,10 @@ body {
 	line-height: 1.75;
 	font-size: 16px;
 	user-select: none;
+	background: url(../img/back2.jpg);
+	background-repeat: repeat-y;
+	background-size: contain;
+	width: 100vw;
 }
 
 button {
@@ -224,7 +228,7 @@ button {
 	justify-content: center;
 	align-items: center;
 	margin: 64px;
-	background-color: white;
+	/* background-color: white; */
 }
 
 .pc-kaidan {
@@ -235,6 +239,7 @@ button {
 	width: 50%;
 	margin-left: 32px;
 	margin-right: 32px;
+	margin-bottom: 256px;
 }
 
 #cpu {
@@ -255,6 +260,7 @@ button {
 	width: 50%;
 	margin-left: 32px;
 	margin-right: 32px;
+	margin-bottom: 256px;
 }
 
 .player-name {
@@ -599,14 +605,14 @@ button {
 	right: 24px;
 	font-size: 24px;
 	color: black;
-	text-shadow: 1.5px 1.5px #bfbebe;
+	text-shadow: 2px 2px 10px #bfbebe;
 	background-color: white;
 	border-radius: 3px;
 }
 
 .saisho:hover {
 	color: rgb(212, 48, 65);
-	text-shadow: 1.5px 1.5px #bfbebe;
+	text-shadow: 1px 1px 7px #bfbebe;
 }
 
 .tokei {

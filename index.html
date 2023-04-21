@@ -146,30 +146,29 @@
                 </div>
             </div>
         </div>
-        <div class="background">
-            <div class="honden" id="sanpai"></div>
-            <div class="suzunarashi">
+        <!-- <div class="background"> -->
+        <div class="honden" id="sanpai"></div>
+        <div class="suzunarashi">
+            <div>
+                <h2 class="suzu-p">どの鈴を鳴らす？</h2>
+                <p class="suzu-p2">挑戦は1回まで（鈴の占領はだめです。）</p>
+            </div>
+            <ul class="suzu">
+                <li id="suzu-left">左の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
+                <li id="suzu-center">真ん中の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
+                <li id="suzu-right">右の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
+            </ul>
+            <div class="no-kamisama">
+                <a href="#startline" class="saisho">最初からお参りする</a>
+            </div>
+            <div class="kamisama">
                 <div>
-                    <h2 class="suzu-p">どの鈴を鳴らす？</h2>
-                    <p class="suzu-p2">挑戦は1回まで（鈴の占領はだめです。）</p>
+                    <p class="suzu-p">神様降臨！</p>
                 </div>
-                <ul class="suzu">
-                    <li id="suzu-left">左の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
-                    <li id="suzu-center">真ん中の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
-                    <li id="suzu-right">右の鈴<audio src="music/garagara2.mp3" id="garagara"></audio></li>
-                </ul>
-                <div class="no-kamisama">
-                    <a href="#startline" class="saisho">最初からお参りする</a>
+                <div>
+                    <img src="img/kamisamatojo.gif" alt="神様！" class="kamisama-img">
                 </div>
-                <div class="kamisama">
-                    <div>
-                        <p class="suzu-p">神様降臨！</p>
-                    </div>
-                    <div>
-                        <img src="img/kamisamatojo.gif" alt="神様！" class="kamisama-img">
-                    </div>
-                    <a href="#startline" class="saisho" id="reset">最初からお参りする</a>
-                </div>
+                <a href="#startline" class="saisho" id="reset">最初からお参りする</a>
             </div>
         </div>
         <div class="tokei">
@@ -386,6 +385,8 @@
             player_position = 0
             $(`#ky-${player_position}`).addClass('player');
             $('.more').css({ display: 'none' });
+            $('#com_hand').html("アマテラスの出した手は？");
+            $('#result').html("結果は？");
         });
 
 
