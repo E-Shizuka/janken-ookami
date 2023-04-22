@@ -581,6 +581,7 @@ button {
 
 .no-kamisama {
 	height: 270px;
+	display: block;
 }
 
 .kamisama {
