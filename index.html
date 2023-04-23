@@ -132,6 +132,7 @@
     </div>
     <div class="more" id="jinjairiguchi">
         <div class="injinja">
+            <!-- iitutae -->
             <div class="injinja-p">
                 <div>
                     <h2 class="injinja-title">ここは…！</h2>
@@ -149,6 +150,7 @@
         <!-- <div class="background"> -->
         <div class="honden" id="sanpai"></div>
         <div class="suzunarashi">
+            <!-- suzugame -->
             <div>
                 <h2 class="suzu-p">どの鈴を鳴らす？</h2>
                 <p class="suzu-p2">挑戦は1回まで（鈴の占領はだめです。）</p>
@@ -163,14 +165,18 @@
             </div>
             <div class="kamisama">
                 <div>
-                    <p class="suzu-p">神様降臨！</p>
+                    <p class="suzu-p">神様がこちらへ駆けてくる姿が！</p>
                 </div>
                 <div>
                     <img src="img/kamisamatojo.gif" alt="神様！" class="kamisama-img">
                 </div>
                 <div>
                     <p class="suzu-p2">この結果に慢心せずに精進すれば願いごとが成就するでしょう！</p>
+                    <a href="#startline" class="saisho" id="reset">最初からお参りする</a>
                 </div>
+            </div>
+            <div class="kamisama-fuzai">
+                <p class="suzu-p">神様の姿は見えなかった</p>
                 <a href="#startline" class="saisho" id="reset">最初からお参りする</a>
             </div>
         </div>
@@ -354,9 +360,11 @@
             if (randomNumber === 4) {
                 $('.no-kamisama').css({ display: 'none' });
                 $('.kamisama').css({ display: 'flex' });
+                $('.kamisama-fuzai').css({ display: 'none' });
             } else {
-                $('.no-kamisama').css({ display: 'block' });
+                $('.no-kamisama').css({ display: 'none' });
                 $('.kamisama').css({ display: 'none' });
+                $('.kamisama-fuzai').css({ display: 'block' });
             };
         });
 
@@ -367,9 +375,11 @@
             if (randomNumber === 5) {
                 $('.no-kamisama').css({ display: 'none' });
                 $('.kamisama').css({ display: 'flex' });
+                $('.kamisama-fuzai').css({ display: 'none' });
             } else {
-                $('.no-kamisama').css({ display: 'block' });
+                $('.no-kamisama').css({ display: 'none' });
                 $('.kamisama').css({ display: 'none' });
+                $('.kamisama-fuzai').css({ display: 'block' });
             };
         });
 
@@ -380,9 +390,11 @@
             if (randomNumber === 7) {
                 $('.no-kamisama').css({ display: 'none' });
                 $('.kamisama').css({ display: 'flex' });
+                $('.kamisama-fuzai').css({ display: 'none' });
             } else {
-                $('.no-kamisama').css({ display: 'block' });
+                $('.no-kamisama').css({ display: 'none' });
                 $('.kamisama').css({ display: 'none' });
+                $('.kamisama-fuzai').css({ display: 'block' });
             };
         });
 
@@ -399,6 +411,9 @@
             $('.more').css({ display: 'none' });
             $('#com_hand').html("アマテラスの出した手は？");
             $('#result').html("結果は？");
+            $('.no-kamisama').css({ display: 'block' });
+            $('.kamisama').css({ display: 'none' });
+            $('.kamisama-fuzai').css({ display: 'none' });
         });
 
 

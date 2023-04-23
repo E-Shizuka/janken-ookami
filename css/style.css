@@ -584,6 +584,11 @@ button {
 	display: block;
 }
 
+.kamisama-fuzai {
+	height: 270px;
+	display: none;
+}
+
 .kamisama {
 	display: none;
 	/* display: flex; */
@@ -618,7 +623,7 @@ button {
 
 .tokei {
 	display: flex;
-	justify-content: center;
+	margin-left: 136px;
 }
 
 .clock {
