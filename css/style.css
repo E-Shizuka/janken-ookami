@@ -251,7 +251,10 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 64px;
+	/* margin-left: 64px;
+	margin-right: 64px;
+	margin-bottom: 64px; */
+	margin: 0 64px;
 	/* background-color: white; */
 }
 
@@ -292,7 +295,7 @@ button {
 }
 
 .kaidan0 {
-	height: 104px;
+	height: 88px;
 	width: 50%;
 	text-align: center;
 }
