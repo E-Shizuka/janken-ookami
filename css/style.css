@@ -2,8 +2,26 @@
 最初から設定してあるので特に変更
 しなくても大丈夫です♪
 -----------------*/
+
+/*
+* “こころ明朝体” licensed under the IPA Font License Agreement v1.0
+* http://typingart.net/（”こころ明朝体”配布元のURL）
+* http://ipafont.ipa.go.jp/（IPAフォントのURL）
+* http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
+*/
+
+@font-face {
+	font-family: 'MyKokoro';
+	src: url('./../font/Kokoro.eot');
+	/* IE9 Compat Modes */
+	src: url('./../font/Kokoro.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('./../font/Kokoro.otf') format('opentype');
+	/* Safari, Android, iOS */
+}
+
 body {
-	font-family: Garamond, "Kokoro", "こころ明朝体", serif;
+	font-family: Garamond, "MyKokoro", serif;
 	src: url('https://cdn.leafscape.be/kokoro/Kokoro_web.woff2') format("woff2");
 	line-height: 1.75;
 	font-size: 16px;
