@@ -573,11 +573,12 @@ button {
 }
 
 .suzunarashi {
-  margin: 24px;
+  height: 50%;
+  /* margin: 24px; */
 }
 
 .suzu-box {
-  height: 15%;
+  height: 50%;
   width: auto;
 }
 
@@ -617,13 +618,13 @@ button {
 }
 
 .no-kamisama {
-  height: 35%;
+  height: 50%;
   width: auto;
   display: block;
 }
 
 .kamisama-fuzai {
-  height: 35%;
+  height: 50%;
   width: auto;
   display: none;
   margin: auto 0;
@@ -635,7 +636,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 35%;
+  height: 50%;
   width: auto;
   padding-bottom: 72px;
 }
