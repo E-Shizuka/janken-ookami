@@ -555,6 +555,7 @@ button {
 .honden-bg {
   height: 100vh;
   width: auto;
+  margin-bottom: 36px;
 }
 
 .honden {
@@ -562,14 +563,8 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 50%;
   width: auto;
-  position: relative;
-  padding-top: 240px;
-  padding-bottom: 240px;
 }
 
 .suzunarashi {
@@ -578,7 +573,7 @@ button {
 }
 
 .suzu-box {
-  height: 50%;
+  height: 40%;
   width: auto;
 }
 
@@ -618,13 +613,13 @@ button {
 }
 
 .no-kamisama {
-  height: 50%;
+  height: 60%;
   width: auto;
   display: block;
 }
 
 .kamisama-fuzai {
-  height: 50%;
+  height: 60%;
   width: auto;
   display: none;
   margin: auto 0;
@@ -636,14 +631,14 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50%;
+  height: 60%;
   width: auto;
-  padding-bottom: 72px;
 }
 
 .kamisama-img {
   text-align: center;
-  height: 160px;
+  height: calc(100% - 80px);
+  width: auto;
 }
 
 .saisho {
