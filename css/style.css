@@ -4,6 +4,7 @@
 -----------------*/
 body {
 	font-family: Garamond, "Kokoro", "こころ明朝体", serif;
+	src: url('https://cdn.leafscape.be/kokoro/Kokoro_web.woff2') format("woff2");
 	line-height: 1.75;
 	font-size: 16px;
 	user-select: none;
@@ -14,9 +15,8 @@ body {
 }
 
 button {
-	font-family: Garamond, "Kokoro",
-		"こころ明朝体",
-		serif;
+	font-family: Garamond, "Kokoro", "こころ明朝体", serif;
+	src: url('https://cdn.leafscape.be/kokoro/Kokoro_web.woff2') format("woff2");
 }
 
 
