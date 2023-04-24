@@ -638,34 +638,185 @@ button {
 }
 
 .linehour {
-	width: 2px;
-	height: 60px;
-	background: white;
+	/* width: 2px;
+	height: 45px;
+	background: rgb(83, 51, 12);
 	position: absolute;
-	top: calc(50% - 60px);
+	top: calc(50% - 45px);
 	left: calc(50% - 1px);
-	transform-origin: bottom;
+	transform-origin: bottom; */
+	width: 0;
+	height: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 50px solid rgb(58, 35, 7);
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 2px);
+	transform-origin: bottom center;
+	transform: rotate(90deg);
+}
+
+.linehour::before {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	border: 2px solid rgb(58, 35, 7);
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% + 35px);
+	left: calc(50% + 0px);
+	transform: translate(-50%, -50%);
+	background-color: #c7af72;
+}
+
+.linehour::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: rgb(58, 35, 7);
+	transform: rotate(45deg) skew(15deg, 15deg);
+	position: absolute;
+	top: calc(50% + 20px);
+	left: calc(50% - 3px);
 }
 
 .linemin {
-	width: 2px;
-	height: 75px;
-	background: white;
+	/* width: 2px;
+	height: 65px;
+	background: rgb(58, 35, 7);
 	position: absolute;
-	top: calc(50% - 75px);
+	top: calc(50% - 65px);
 	left: calc(50% - 1px);
-	transform-origin: bottom;
+	transform-origin: bottom; */
+	width: 0;
+	height: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 70px solid rgb(58, 35, 7);
+	position: absolute;
+	top: calc(50% - 70px);
+	left: calc(50% - 2px);
+	transform-origin: bottom center;
+	transform: rotate(90deg);
+}
+
+.linemin::before {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	border: 2px solid rgb(58, 35, 7);
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% + 45px);
+	left: calc(50% + 0px);
+	transform: translate(-50%, -50%);
+	background-color: #c7af72;
+}
+
+.linemin::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: rgb(58, 35, 7);
+	transform: rotate(45deg) skew(15deg, 15deg);
+	position: absolute;
+	top: calc(50% + 30px);
+	left: calc(50% - 3px);
 }
 
 .linesec {
-	width: 1px;
-	height: 75px;
-	background: white;
+	/* width: 1px;
+	height: 65px;
+	background: rgb(83, 51, 12);
 	position: absolute;
-	top: calc(50% - 75px);
+	top: calc(50% - 65px);
 	left: calc(50% - 1px);
-	transform-origin: bottom;
+	transform-origin: bottom; */
+	width: 0;
+	height: 0;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 70px solid rgb(83, 51, 12);
+	position: absolute;
+	top: calc(50% - 70px);
+	left: calc(50% - 1px);
+	transform-origin: bottom center;
+	transform: rotate(90deg);
 }
+
+.linesec::before {
+	content: "";
+	display: block;
+	width: 3px;
+	height: 3px;
+	border: 0.5px solid rgb(83, 51, 12);
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% + 40px);
+	left: calc(50% + 0px);
+	transform: translate(-50%, -50%);
+	background-color: #c7af72;
+}
+
+.linesec::after {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	background-color: rgb(83, 51, 12);
+	transform: rotate(45deg) skew(15deg, 15deg);
+	position: absolute;
+	top: calc(50% + 30px);
+	left: calc(50% - 2.45px);
+}
+
+.ookami-tokei {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ookami-tokei img {
+	height: 256px;
+}
+
+.m-clock {
+	display: flex;
+}
+
+.m-designtokei {
+	border-radius: 50%;
+	border: 3px;
+	width: 150px;
+	height: 150px;
+	background: url(../img/m-tokei_bg.PNG);
+	background-size: cover;
+	position: relative;
+	justify-content: center;
+}
+
+.m-designtokei::before {
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	background-color: rgb(58, 35, 7);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
 
 
 /*どの部分のcssに対して

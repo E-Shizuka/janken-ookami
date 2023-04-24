@@ -187,6 +187,22 @@
                 <div class="linesec"></div>
             </div>
         </div>
+        <div class="ookami-tokei">
+            <div class="mosirechuku">
+                <img src="img/tokei-moshirechuku.png" alt="モシレチク">
+            </div>
+            <div class="m-tokei">
+                <div class="m-designtokei">
+                    <div class="linehour"></div>
+                    <div class="linemin"></div>
+                    <div class="linesec"></div>
+                </div>
+            </div>
+            <div class="kotanechiku">
+                <img src="img/tokei-kotanechiku.png" alt="コタネチク">
+            </div>
+
+        </div>
     </div>
 
     </div>
@@ -441,19 +457,29 @@
             // 秒針
             const degS = s * (360 / 60);
 
-            const elementH = document.querySelector('.linehour');
+            // const elementH = document.querySelector('.linehour');
 
-            const elementM = document.querySelector('.linemin');
+            const elementH1 = $('.linehour')[0];
+            const elementH2 = $('.linehour')[1];
 
-            const elementS = document.querySelector('.linesec');
+            const elementM1 = $('.linemin')[0];
+            const elementM2 = $('.linemin')[1];
 
-            elementH.style.transform = `rotate(${degH}deg)`;
+            const elementS1 = $('.linesec')[0];
+            const elementS2 = $('.linesec')[1];
 
-            elementM.style.transform = `rotate(${degM}deg)`;
+            elementH1.style.transform = `rotate(${degH}deg)`;
+            elementH2.style.transform = `rotate(${degH}deg)`;
 
-            elementS.style.transform = `rotate(${degS}deg)`;
+            elementM1.style.transform = `rotate(${degM}deg)`;
+            elementM2.style.transform = `rotate(${degM}deg)`;
 
-        }, 50);
+            elementS1.style.transform = `rotate(${degS}deg)`;
+            elementS2.style.transform = `rotate(${degS}deg)`;
+
+        }, 1000);
+
+
 
         // const result = $('.player1-xy').position();
         // const player1 = $('<img>', {
