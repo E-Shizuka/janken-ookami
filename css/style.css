@@ -153,11 +153,15 @@ button {
 	}
 }
 
+.arasuji-start {
+	height: 100vh;
+}
+
 .arasuji {
 	background: url(../img/arasuji-bg.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 500px;
+	height: 50%;
 	object-fit: cover;
 	position: relative;
 	margin-left: 240px;
@@ -174,7 +178,7 @@ button {
 	flex-direction: column;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.558);
-	height: 480px;
+	height: 95%;
 	width: 95%;
 }
 
@@ -194,9 +198,11 @@ button {
 
 .arasuji-2 {
 	background: url(../img/special_img03.png);
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 	background-position: center;
-	height: 320px;
+	height: 35%;
+	width: auto;
 	object-fit: cover;
 	position: relative;
 	margin-left: 240px;
@@ -211,7 +217,7 @@ button {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 64px;
-
+	height: 15%;
 }
 
 .start-btn {
