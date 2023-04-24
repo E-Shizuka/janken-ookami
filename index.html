@@ -180,12 +180,15 @@
                 <a href="#startline" class="saisho" id="reset">最初からお参りする</a>
             </div>
         </div>
-        <div class="tokei">
+        <!-- <div class="tokei">
             <div class="clock">
                 <div class="linehour"></div>
                 <div class="linemin"></div>
                 <div class="linesec"></div>
             </div>
+        </div> -->
+        <div class="ookami-tokei-title">
+            <h2>おまけ</h2>
         </div>
         <div class="ookami-tokei">
             <div class="mosirechuku">
@@ -201,7 +204,11 @@
             <div class="kotanechiku">
                 <img src="img/tokei-kotanechiku.png" alt="コタネチク">
             </div>
-
+            <div class="k-designtokei">
+                <div class="k-design" id="k-hour"></div>
+                <div class="k-design" id="k-min-10"></div>
+                <div class="k-design" id="k-min-1"></div>
+            </div>
         </div>
     </div>
 
@@ -217,12 +224,9 @@
         let cpu_position = 0;
         let player_position = 0;
 
-
-
         // $('#link_gamespace').on('click', function () {
         //     $(window).scrollTop($('#gamespace').position().top);
         // });
-
 
         $("#gu_btn").on("click", function () {
             const randomNumber = Math.floor(Math.random() * (4)) + 1;
@@ -433,11 +437,6 @@
         });
 
 
-
-
-
-
-
         setInterval(() => {
             // 現在時間を取得
             const now = new Date();
@@ -460,24 +459,94 @@
             // const elementH = document.querySelector('.linehour');
 
             const elementH1 = $('.linehour')[0];
-            const elementH2 = $('.linehour')[1];
+            // const elementH2 = $('.linehour')[1];
 
             const elementM1 = $('.linemin')[0];
-            const elementM2 = $('.linemin')[1];
+            // const elementM2 = $('.linemin')[1];
 
             const elementS1 = $('.linesec')[0];
-            const elementS2 = $('.linesec')[1];
+            // const elementS2 = $('.linesec')[1];
 
             elementH1.style.transform = `rotate(${degH}deg)`;
-            elementH2.style.transform = `rotate(${degH}deg)`;
+            // elementH2.style.transform = `rotate(${degH}deg)`;
 
             elementM1.style.transform = `rotate(${degM}deg)`;
-            elementM2.style.transform = `rotate(${degM}deg)`;
+            // elementM2.style.transform = `rotate(${degM}deg)`;
 
             elementS1.style.transform = `rotate(${degS}deg)`;
-            elementS2.style.transform = `rotate(${degS}deg)`;
+            // elementS2.style.transform = `rotate(${degS}deg)`;
 
         }, 1000);
+
+        setInterval(() => {
+            // 現在時間を取得
+            const now = new Date();
+
+            const h = now.getHours(); // 時間（0〜23）
+            const h_eights = h % 8; // 8時間で区切る
+            const m = now.getMinutes(); // 分（0〜59）
+            const m_tens = Math.floor(m / 10); // 十の位の数字を取り出す
+            const m_ones = m % 10; // 一の位の数字を取り出す
+
+            if (h_eights === 1) {
+                $('#k-hour').html("壱");
+            } else if (h_eights === 2) {
+                $('#k-hour').html("弐");
+            } else if (h_eights === 3) {
+                $('#k-hour').html("参");
+            } else if (h_eights === 4) {
+                $('#k-hour').html("肆");
+            } else if (h_eights === 5) {
+                $('#k-hour').html("伍");
+            } else if (h_eights === 6) {
+                $('#k-hour').html("陸");
+            } else if (h_eights === 7) {
+                $('#k-hour').html("漆");
+            }
+            else {
+                $('#k-hour').html("捌");
+            };
+
+            if (m_tens === 0) {
+                $('#k-min-10').html("零");
+            } else if (m_tens === 1) {
+                $('#k-min-10').html("壱");
+            } else if (m_tens === 2) {
+                $('#k-min-10').html("弐");
+            } else if (m_tens === 3) {
+                $('#k-min-10').html("参");
+            } else if (m_tens === 4) {
+                $('#k-min-10').html("肆");
+            }
+            else {
+                $('#k-min-10').html("伍");
+            };
+
+            if (m_ones === 0) {
+                $('#k-min-1').html("零");
+            } else if (m_ones === 1) {
+                $('#k-min-1').html("壱");
+            } else if (m_ones === 2) {
+                $('#k-min-1').html("弐");
+            } else if (m_ones === 3) {
+                $('#k-min-1').html("参");
+            } else if (m_ones === 4) {
+                $('#k-min-1').html("肆");
+            } else if (m_ones === 5) {
+                $('#k-min-1').html("伍");
+            } else if (m_ones === 6) {
+                $('#k-min-1').html("陸");
+            } else if (m_ones === 7) {
+                $('#k-min-1').html("漆");
+            } else if (m_ones === 8) {
+                $('#k-min-1').html("捌");
+            }
+            else {
+                $('#k-min-1').html("玖");
+            };
+
+        }, 1000);
+
 
 
 
