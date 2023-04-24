@@ -11,42 +11,40 @@
 */
 
 @font-face {
-	font-family: 'MyKokoro';
-	src: url('./../font/Kokoro.eot');
-	/* IE9 Compat Modes */
-	src: url('./../font/Kokoro.eot?#iefix') format('embedded-opentype'),
-		/* IE6-IE8 */
-		url('./../font/Kokoro.otf') format('opentype');
-	/* Safari, Android, iOS */
+  font-family: "MyKokoro";
+  src: url("./../font/Kokoro.eot");
+  /* IE9 Compat Modes */
+  src: url("./../font/Kokoro.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./../font/Kokoro.otf") format("opentype");
+  /* Safari, Android, iOS */
 }
 
 body {
-	font-family: Garamond, "MyKokoro", serif;
-	src: url('https://cdn.leafscape.be/kokoro/Kokoro_web.woff2') format("woff2");
-	line-height: 1.75;
-	font-size: 16px;
-	user-select: none;
-	background: url(../img/back2.jpg);
-	background-repeat: repeat-y;
-	background-size: contain;
-	width: 100vw;
+  font-family: Garamond, "MyKokoro", serif;
+  src: url("https://cdn.leafscape.be/kokoro/Kokoro_web.woff2") format("woff2");
+  line-height: 1.75;
+  font-size: 16px;
+  user-select: none;
+  background: url(../img/back2.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100vw;
 }
 
 button {
-	font-family: Garamond, "Kokoro", "こころ明朝体", serif;
-	src: url('https://cdn.leafscape.be/kokoro/Kokoro_web.woff2') format("woff2");
+  font-family: Garamond, "Kokoro", "こころ明朝体", serif;
+  src: url("https://cdn.leafscape.be/kokoro/Kokoro_web.woff2") format("woff2");
 }
-
 
 /*パディングをサイズ内側にする処理*/
 * {
-	padding: 0;
-	margin: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*ーーーーーーーーーーー*/
@@ -54,608 +52,619 @@ button {
 /*ーーーーーーーーーーー*/
 
 .top {
-	background: url(../img/torii.jpg);
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 1000px;
-	object-fit: cover;
-	position: relative;
-	animation-name: fadeAnime;
-	animation-duration: 5s;
-	opacity: 1;
-	animation-fill-mode: forwards;
+  background: url(../img/torii.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  position: relative;
+  animation-name: fadeAnime;
+  animation-duration: 5s;
+  opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeAnime {
-	50% {
-		opacity: 1;
-		height: 1000px;
-		background: url(../img/torii.jpg);
-		background-size: cover;
-		background-position: center;
-	}
+  50% {
+    opacity: 1;
+    height: 1000px;
+    background: url(../img/torii.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 
-	70% {
-		opacity: 0;
-		height: 1000px;
-		background: url(../img/torii.jpg);
-		background-size: cover;
-		background-position: center;
-	}
+  70% {
+    opacity: 0;
+    height: 1000px;
+    background: url(../img/torii.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 
-	85% {
-		height: 10px;
-		background: black;
-	}
+  85% {
+    height: 10px;
+    background: black;
+  }
 
-	100% {
-		height: 10px;
-		background: black;
-	}
+  100% {
+    height: 10px;
+    background: black;
+  }
 }
 
 .jastify {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding-top: 470px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 470px;
 }
 
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .top-title {
-	color: white;
-	font-size: 64px;
-	animation-name: fadetextAnime;
-	animation-duration: 5s;
-	opacity: 1;
-	animation-fill-mode: forwards;
+  color: white;
+  font-size: 64px;
+  animation-name: fadetextAnime;
+  animation-duration: 5s;
+  opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 .top-text1 {
-	color: white;
-	font-size: 32px;
-	animation-name: fadetextAnime;
-	animation-duration: 5s;
-	opacity: 1;
-	animation-fill-mode: forwards;
+  color: white;
+  font-size: 32px;
+  animation-name: fadetextAnime;
+  animation-duration: 5s;
+  opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 .top-text2 {
-	color: white;
-	text-align: end;
-	font-size: 24px;
-	padding-right: 64px;
-	padding-top: 160px;
-	animation-name: fadetextAnime;
-	animation-duration: 5s;
-	opacity: 1;
-	animation-fill-mode: forwards;
+  color: white;
+  text-align: end;
+  font-size: 24px;
+  padding-right: 64px;
+  padding-top: 160px;
+  animation-name: fadetextAnime;
+  animation-duration: 5s;
+  opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadetextAnime {
-	50% {
-		opacity: 1;
-	}
+  50% {
+    opacity: 1;
+  }
 
-	70% {
-		opacity: 0;
-	}
+  70% {
+    opacity: 0;
+  }
 
-	100% {
-		opacity: 0;
-	}
+  100% {
+    opacity: 0;
+  }
 }
 
 .arasuji-start {
-	height: 100vh;
+  height: 100vh;
 }
 
 .arasuji {
-	background: url(../img/arasuji-bg.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 50%;
-	object-fit: cover;
-	position: relative;
-	margin-left: 240px;
-	margin-right: 240px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background: url(../img/arasuji-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  object-fit: cover;
+  position: relative;
+  margin-left: 240px;
+  margin-right: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .arasuji-p {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 0.558);
-	height: 95%;
-	width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.558);
+  height: 95%;
+  width: 95%;
 }
 
 .arasuji-title {
-	color: black;
-	text-shadow: 2px 2px 10px white;
-	font-size: 64px;
-	text-align: center;
+  color: black;
+  text-shadow: 2px 2px 10px white;
+  font-size: 64px;
+  text-align: center;
 }
 
 .arasuji-text {
-	color: black;
-	text-shadow: 1px 1px 7px white;
-	font-size: 24px;
-	text-align: center;
+  color: black;
+  text-shadow: 1px 1px 7px white;
+  font-size: 24px;
+  text-align: center;
 }
 
 .arasuji-2 {
-	background: url(../img/special_img03.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 35%;
-	width: auto;
-	object-fit: cover;
-	position: relative;
-	margin-left: 240px;
-	margin-right: 240px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background: url(../img/special_img03.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35%;
+  width: auto;
+  object-fit: cover;
+  position: relative;
+  margin-left: 240px;
+  margin-right: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-start {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 64px;
-	height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+  height: 15%;
 }
 
 .start-btn {
-	height: 64px;
-	width: auto;
-	padding: 8px;
-	margin: 8px;
-	background-color: rgb(212, 48, 65);
-	border-radius: 3px;
-	font-size: 1.5em;
-	color: white;
+  height: 64px;
+  width: auto;
+  padding: 8px;
+  margin: 8px;
+  background-color: rgb(212, 48, 65);
+  border-radius: 3px;
+  font-size: 1.5em;
+  color: white;
 }
 
 .start-btn li:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .yohaku {
-
-	width: 100vh;
-	background-color: white;
+  width: 100vh;
+  background-color: white;
 }
 
 .play:visited {
-	color: rgb(212, 48, 65);
+  color: rgb(212, 48, 65);
 }
 
 .guriko {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* margin-left: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 64px;
 	margin-right: 64px;
 	margin-bottom: 64px; */
-	margin: 0 64px;
-	/* background-color: white; */
+  margin: 0 64px;
+  /* background-color: white; */
 }
 
 .pc-kaidan {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
-	margin-left: 32px;
-	margin-right: 32px;
-	margin-bottom: 256px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 256px;
 }
 
 #cpu {
-	height: 96px;
-	width: auto;
+  height: 96px;
+  width: auto;
 }
 
 #player {
-	height: 96px;
-	width: auto;
+  height: 96px;
+  width: auto;
 }
 
 .player-kaidan {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
-	margin-left: 32px;
-	margin-right: 32px;
-	margin-bottom: 256px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 256px;
 }
 
 .player-name {
-	text-align: center;
+  text-align: center;
 }
 
 .kaidan0 {
-	height: 88px;
-	width: 50%;
-	text-align: center;
+  height: 88px;
+  width: 50%;
+  text-align: center;
 }
 
 .game {
-	position: sticky;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	top: 24px;
-	margin: 0 auto;
-	opacity: 1;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 24px;
+  margin: 0 auto;
+  opacity: 1;
 }
 
 .game ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .game li {
-	padding: 8px;
-	margin: 8px;
-	background-color: rgb(212, 48, 65);
-	color: white;
-	border-radius: 3px;
-	font-size: 1.5em;
-	width: auto;
+  padding: 8px;
+  margin: 8px;
+  background-color: rgb(212, 48, 65);
+  color: white;
+  border-radius: 3px;
+  font-size: 1.5em;
+  width: auto;
 }
 
 .game li:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .cpu {
-	background: url(../img/amaterasu.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: rgb(255, 189, 195) !important;
-
+  background: url(../img/amaterasu.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 189, 195) !important;
 }
 
 .player {
-	background: url(../img/player.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: rgb(255, 189, 195) !important;
+  background: url(../img/player.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 189, 195) !important;
 }
 
 .kaidan {
-	border: solid 1px rgb(81, 80, 80);
-	background-color: rgb(202, 202, 202);
-	height: 32px;
-	width: 50%;
-	text-align: center;
+  border: solid 1px rgb(81, 80, 80);
+  background-color: rgb(202, 202, 202);
+  height: 32px;
+  width: 50%;
+  text-align: center;
 }
 
 .cpu-win {
-	display: none;
-	position: fixed;
-	background-color: white;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	z-index: 10000;
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
 }
 
 .a-w {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .a-w-left {
-	width: 50%;
+  width: 50%;
 }
 
 .a-w-right {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .a-win-cm {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .a-win-title {
-	text-align: center;
-	color: black;
+  text-align: center;
+  color: black;
 }
 
 .a-win-text {
-	text-align: center;
-	color: black;
+  text-align: center;
+  color: black;
 }
 
 .a-win-button {
-	padding-top: 64px;
+  padding-top: 64px;
 }
 
 .tryagain {
-	height: 64px;
-	width: auto;
-	padding: 8px;
-	margin: 8px;
-	background-color: rgb(212, 48, 65);
-	color: white;
-	border-radius: 3px;
-	font-size: 1.5em;
+  height: 64px;
+  width: auto;
+  padding: 8px;
+  margin: 8px;
+  background-color: rgb(212, 48, 65);
+  color: white;
+  border-radius: 3px;
+  font-size: 1.5em;
 }
 
 .tryagain li:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .player-win {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: auto;
-	z-index: 10000;
-	background-color: rgb(212, 48, 65);
-	text-align: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 10000;
+  background-color: rgb(212, 48, 65);
+  text-align: center;
 }
 
 .p-win-cm {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 .p-win-title {
-	text-align: center;
-	color: white;
+  text-align: center;
+  color: white;
 }
 
 .p-win-btn {
-	height: 64px;
-	width: auto;
-	padding: 8px;
-	margin: 8px;
-	background-color: rgb(51, 34, 8);
-	border-radius: 3px;
-	font-size: 1.5em;
-	color: white;
+  height: 64px;
+  width: auto;
+  padding: 8px;
+  margin: 8px;
+  background-color: rgb(51, 34, 8);
+  border-radius: 3px;
+  font-size: 1.5em;
+  color: white;
 }
 
 .p-win-btn li:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .next {
-	color: white;
+  color: white;
 }
 
 .next:visited {
-	color: rgb(212, 48, 65);
+  color: rgb(212, 48, 65);
 }
 
 .more {
-	display: none;
+  display: none;
 }
 
 .injinja {
-	background: url(../img/in-jinja.jpg);
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: auto;
-	height: 100vh;
-	object-fit: cover;
-	position: relative;
-	margin-bottom: 240px;
+  background: url(../img/in-jinja.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  margin-bottom: 240px;
 }
 
 .injinja-p {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 0.558);
-	height: 95%;
-	width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.558);
+  height: 95%;
+  width: 95%;
 }
 
 .injinja-title {
-	color: black;
-	text-shadow: 2px 2px 10px white;
-	font-size: 64px;
-	text-align: center;
+  color: black;
+  text-shadow: 2px 2px 10px white;
+  font-size: 64px;
+  text-align: center;
 }
 
 .injinja-text {
-	color: black;
-	text-shadow: 1px 1px 7px white;
-	font-size: 32px;
-	text-align: center;
-	position: relative;
+  color: black;
+  text-shadow: 1px 1px 7px white;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
 }
 
-.omairi-box{
-	display: flex;
-	justify-content: center;
+.omairi-box {
+  display: flex;
+  justify-content: center;
 }
 
 .omairi-btn {
-	height: 64px;
-	width: auto;
-	padding: 8px;
-	position: absolute;
-	bottom: 32px;
-	margin: auto 0;
-	background-color: rgb(212, 48, 65);
-	border-radius: 3px;
-	font-size: 1.5em;
-	color: white;
+  height: 64px;
+  width: auto;
+  padding: 8px;
+  position: absolute;
+  bottom: 32px;
+  margin: auto 0;
+  background-color: rgb(212, 48, 65);
+  border-radius: 3px;
+  font-size: 1.5em;
+  color: white;
 }
 
 .omairi-btn li:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .omairi {
-	color: white;
+  color: white;
 }
 
 .omairi:visited {
-	color: rgb(212, 48, 65);
+  color: rgb(212, 48, 65);
 }
 
 .background {
-	background: url(../img/back2.jpg);
-	background-repeat: repeat-y;
-	background-size: contain;
-	width: 100vw;
+  background: url(../img/back2.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100vw;
+}
+
+.honden-bg {
+  height: 100vh;
+  width: auto;
 }
 
 .honden {
-	background: url(../img/honden.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 400px;
-	width: auto;
-	position: relative;
-	padding-top: 240px;
-	padding-bottom: 240px;
+  background: url(../img/honden.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: auto;
+  position: relative;
+  padding-top: 240px;
+  padding-bottom: 240px;
 }
 
 .suzunarashi {
-	margin: 40px;
+  margin: 24px;
+}
+
+.suzu-box {
+  height: 15%;
+  width: auto;
 }
 
 .suzu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
 }
 
 .suzu-p {
-	text-align: center;
-	justify-content: center;
-	font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
 }
 
 .suzu-p2 {
-	text-align: center;
-	justify-content: center;
-	font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
 }
 
 .suzu li {
-	padding: 8px;
-	margin: 8px;
-	background-color: rgb(212, 48, 65);
-	color: white;
-	border-radius: 3px;
-	font-size: 1.5em;
-	width: auto;
+  padding: 8px;
+  margin: 8px;
+  background-color: rgb(212, 48, 65);
+  color: white;
+  border-radius: 3px;
+  font-size: 1.5em;
+  width: auto;
 }
 
 .suzu li:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .no-kamisama {
-	height: 270px;
-	display: block;
+  height: 35%;
+  width: auto;
+  display: block;
 }
 
 .kamisama-fuzai {
-	height: 270px;
-	display: none;
+  height: 35%;
+  width: auto;
+  display: none;
+  margin: auto 0;
 }
 
 .kamisama {
-	display: none;
-	/* display: flex; */
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 270px;
-	padding-bottom: 72px;
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 35%;
+  width: auto;
+  padding-bottom: 72px;
 }
 
 .kamisama-img {
-	text-align: center;
-	height: 160px;
+  text-align: center;
+  height: 160px;
 }
 
 .saisho {
-	text-align: center;
-	position: fixed;
-	bottom: 24px;
-	right: 24px;
-	font-size: 24px;
-	color: black;
-	text-shadow: 2px 2px 10px #bfbebe;
-	background-color: white;
-	border-radius: 3px;
+  text-align: center;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-size: 24px;
+  color: black;
+  text-shadow: 2px 2px 10px #bfbebe;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .saisho:hover {
-	color: rgb(212, 48, 65);
-	text-shadow: 1px 1px 7px #bfbebe;
+  color: rgb(212, 48, 65);
+  text-shadow: 1px 1px 7px #bfbebe;
 }
 
 .ookami-tokei-title {
-	font-size: 40px;
-	margin-left: 256px;
+  font-size: 40px;
+  margin-left: 256px;
 }
 
 /* .tokei {
@@ -675,245 +684,231 @@ button {
 } */
 
 .linehour {
-	/* width: 2px;
+  /* width: 2px;
 	height: 45px;
 	background: rgb(83, 51, 12);
 	position: absolute;
 	top: calc(50% - 45px);
 	left: calc(50% - 1px);
 	transform-origin: bottom; */
-	width: 0;
-	height: 0;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-	border-bottom: 50px solid rgb(58, 35, 7);
-	position: absolute;
-	top: calc(50% - 50px);
-	left: calc(50% - 2px);
-	transform-origin: bottom center;
-	transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 50px solid rgb(58, 35, 7);
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 2px);
+  transform-origin: bottom center;
+  transform: rotate(90deg);
 }
 
 .linehour::before {
-	content: "";
-	display: block;
-	width: 5px;
-	height: 5px;
-	border: 2px solid rgb(58, 35, 7);
-	border-radius: 50%;
-	position: absolute;
-	top: calc(50% + 35px);
-	left: calc(50% + 0px);
-	transform: translate(-50%, -50%);
-	background-color: #c7af72;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 2px solid rgb(58, 35, 7);
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% + 35px);
+  left: calc(50% + 0px);
+  transform: translate(-50%, -50%);
+  background-color: #c7af72;
 }
 
 .linehour::after {
-	content: "";
-	display: block;
-	width: 6px;
-	height: 6px;
-	background-color: rgb(58, 35, 7);
-	transform: rotate(45deg) skew(15deg, 15deg);
-	position: absolute;
-	top: calc(50% + 20px);
-	left: calc(50% - 3px);
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(58, 35, 7);
+  transform: rotate(45deg) skew(15deg, 15deg);
+  position: absolute;
+  top: calc(50% + 20px);
+  left: calc(50% - 3px);
 }
 
 .linemin {
-	/* width: 2px;
+  /* width: 2px;
 	height: 65px;
 	background: rgb(58, 35, 7);
 	position: absolute;
 	top: calc(50% - 65px);
 	left: calc(50% - 1px);
 	transform-origin: bottom; */
-	width: 0;
-	height: 0;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-	border-bottom: 70px solid rgb(58, 35, 7);
-	position: absolute;
-	top: calc(50% - 70px);
-	left: calc(50% - 2px);
-	transform-origin: bottom center;
-	transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 70px solid rgb(58, 35, 7);
+  position: absolute;
+  top: calc(50% - 70px);
+  left: calc(50% - 2px);
+  transform-origin: bottom center;
+  transform: rotate(90deg);
 }
 
 .linemin::before {
-	content: "";
-	display: block;
-	width: 5px;
-	height: 5px;
-	border: 2px solid rgb(58, 35, 7);
-	border-radius: 50%;
-	position: absolute;
-	top: calc(50% + 45px);
-	left: calc(50% + 0px);
-	transform: translate(-50%, -50%);
-	background-color: #c7af72;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 2px solid rgb(58, 35, 7);
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% + 45px);
+  left: calc(50% + 0px);
+  transform: translate(-50%, -50%);
+  background-color: #c7af72;
 }
 
 .linemin::after {
-	content: "";
-	display: block;
-	width: 6px;
-	height: 6px;
-	background-color: rgb(58, 35, 7);
-	transform: rotate(45deg) skew(15deg, 15deg);
-	position: absolute;
-	top: calc(50% + 30px);
-	left: calc(50% - 3px);
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(58, 35, 7);
+  transform: rotate(45deg) skew(15deg, 15deg);
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% - 3px);
 }
 
 .linesec {
-	/* width: 1px;
+  /* width: 1px;
 	height: 65px;
 	background: rgb(83, 51, 12);
 	position: absolute;
 	top: calc(50% - 65px);
 	left: calc(50% - 1px);
 	transform-origin: bottom; */
-	width: 0;
-	height: 0;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	border-bottom: 70px solid rgb(83, 51, 12);
-	position: absolute;
-	top: calc(50% - 70px);
-	left: calc(50% - 1px);
-	transform-origin: bottom center;
-	transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 70px solid rgb(83, 51, 12);
+  position: absolute;
+  top: calc(50% - 70px);
+  left: calc(50% - 1px);
+  transform-origin: bottom center;
+  transform: rotate(90deg);
 }
 
 .linesec::before {
-	content: "";
-	display: block;
-	width: 3px;
-	height: 3px;
-	border: 0.5px solid rgb(83, 51, 12);
-	border-radius: 50%;
-	position: absolute;
-	top: calc(50% + 40px);
-	left: calc(50% + 0px);
-	transform: translate(-50%, -50%);
-	background-color: #c7af72;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  border: 0.5px solid rgb(83, 51, 12);
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% + 40px);
+  left: calc(50% + 0px);
+  transform: translate(-50%, -50%);
+  background-color: #c7af72;
 }
 
 .linesec::after {
-	content: "";
-	display: block;
-	width: 4px;
-	height: 4px;
-	background-color: rgb(83, 51, 12);
-	transform: rotate(45deg) skew(15deg, 15deg);
-	position: absolute;
-	top: calc(50% + 30px);
-	left: calc(50% - 2.45px);
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: rgb(83, 51, 12);
+  transform: rotate(45deg) skew(15deg, 15deg);
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% - 2.45px);
 }
 
 .ookami-tokei {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ookami-tokei img {
-	height: 256px;
-	margin: 8px;
+  height: 256px;
+  margin: 8px;
 }
 
 .m-clock {
-	display: flex;
-	margin-right: 32px;
+  display: flex;
+  margin-right: 32px;
 }
 
 .m-designtokei {
-	border-radius: 50%;
-	border: 3px;
-	width: 160px;
-	height: 160px;
-	background: url(../img/m-tokei_bg.PNG);
-	background-size: cover;
-	position: relative;
-	justify-content: center;
+  border-radius: 50%;
+  border: 3px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/m-tokei_bg.PNG);
+  background-size: cover;
+  position: relative;
+  justify-content: center;
 }
 
 .m-designtokei::before {
-	content: "";
-	display: block;
-	width: 7px;
-	height: 7px;
-	background-color: rgb(58, 35, 7);
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: rgb(58, 35, 7);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .kotanechiku {
-	margin-left: 32px;
+  margin-left: 32px;
 }
 
 .k-designtokei {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid #000;
-	margin: 2px;
-	font-size: 40px;
-	background-color: #ececec;
-	width: 160px;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 2px;
+  font-size: 40px;
+  background-color: #ececec;
+  width: 160px;
+  text-align: center;
 }
 
 .k-design {
-	border: 1px solid #000;
-	margin: 2px;
-	background-color: #e4e4e4;
-	position: relative;
-	width: 30%;
+  border: 1px solid #000;
+  margin: 2px;
+  background-color: #e4e4e4;
+  position: relative;
+  width: 30%;
 }
 
 .k-design::before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 0.5px;
-	background-color: #000;
-	transform: translateY(-50%);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  background-color: #000;
+  transform: translateY(-50%);
 }
-
-
-
-
-
-
-
 
 /*どの部分のcssに対して
 命令をしているのかコメントを
 記載しよう！
 ---------------------*/
 
+/*
+---------------------*/
 
 /*
 ---------------------*/
 
-
-
 /*
 ---------------------*/
-
-
-
-/*
----------------------*/
-
-
 
 /*
 ---------------------*/
